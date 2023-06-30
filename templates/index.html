@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Reset default browser styles */
+        body, h1, input, button {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Chat container */
+        .chat-container {
+            width: 800px; /* Adjust the width as desired */
+            height: 400px; /* Adjust the height as desired */
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Chat header */
+        .chat-header {
+            background-color: #f5f5f5;
+            padding: 10px;
+            text-align: center;
+            background-color: #f5f5f5; /* Header background color */
+
+
+        }
+
+        /* Chat messages */
+        .chat-messages {
+            height: 300px; /* Adjust the height as desired */
+            padding: 10px;
+            overflow-y: auto;
+        }
+
+        .message-container {
+            display: flex;
+            justify-content: flex-start; /* Align messages to the left */
+            margin-bottom: 8px;
+        }
+
+        .user-message {
+            background-color: #dcf8c6; /* Color for user messages */
+            padding: 8px;
+            border-radius: 4px;
+            margin-left: auto; /* Align user messages to the right */
+        }
+
+        .bot-message {
+            background-color: #f5f5f5;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        /* Chat input */
+        .chat-input {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #f5f5f5;
+        }
+
+        input[type="text"] {
+            flex-grow: 1;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        button {
+            margin-left: 10px;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Banking Bot</h2>
+        </div>
+              <div class="chat-messages">
+            <div id="chat-history">
+                {% for message in chat_history %}
+                    {% if loop.index % 2 == 0 %}
+                        <div class="message-container">
+                            <div class="user-message">{{ message }}</div>
+                        </div>
+                    {% else %}
+                        <div class="message-container">
+                            <div class="bot-message">{{ message }}</div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                {% if not chat_history %}
+                    <div class="message-container">
+                        <div class="bot-message">Hello! How can I assist you today?</div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <form action="/submit" method="post">
+            <div class="chat-input">
+                <input type="text" name="user_input" placeholder="Type your message..." required>
+                <button type="submit">Send</button>
+            </div>
+            <input type="hidden" name="chat_history" value="{{ chat_history }}">
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
