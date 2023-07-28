@@ -1,0 +1,103 @@
+text,intent
+"What is my account balance?",balance
+"Can I transfer money to another account?",transfer
+"How do I make a payment?",payment
+"Help me with my account",help
+"What are the interest rates?",account info
+"How can I reset my password?",help
+"Tell me about the credit card options",account info
+"I want to open a new account",account info
+"Where is the nearest ATM?",account info
+"Is there a minimum balance required?",account info
+"Can I change my PIN online?",help
+"Tell me the process for wire transfer",transfer
+"Are there any fees for international transactions?",account info
+"I forgot my account number",help
+"Can I get a loan?",account info
+"How can I contact customer support?",help
+"Tell me about the savings account options",account info
+"I want to report a lost credit card",help
+"What is the daily withdrawal limit?",account info
+"Can I deposit a check using the mobile app?",account info
+"How long does a transfer take to complete?",transfer
+"Can I apply for a credit card online?",account info
+"Tell me about the mortgage options",account info
+"I'm having trouble logging in",help
+"Can I schedule a recurring payment?",payment
+"What is the customer service number?",help
+"Is there a mobile app for banking?",account info
+"Can I open a fixed deposit account?",account info
+"How do I update my contact information?",help
+"Tell me about the foreign currency exchange",account info
+"I want to dispute a transaction",help
+"Can I get a copy of my account statement?",account info
+"Can I set a spending limit on my card?",account info
+"How do I redeem credit card rewards?",payment
+"Tell me about the different account types",account info
+"Can I pay my bills online?",payment
+"How can I check my account balance?",balance
+"Is there a fee for using ATMs from other banks?",account info
+"Can I transfer money internationally?",transfer
+"What should I do if my card is stolen?",help
+"Tell me about the online banking features",account info
+"I need help with a suspicious email",help
+"Can I apply for a loan online?",account info
+"How can I increase my credit limit?",account info
+"Tell me about the investment options",account info
+"I want to update my mailing address",help
+"Can I open an account for my child?",account info
+"What is the interest rate on savings accounts?",account info
+"Is there a charge for paper statements?",account info
+"How do I set up account alerts?",help
+"Tell me about the retirement planning services",account info
+"I need assistance with a mobile app issue",help
+"Can I apply for a credit card with no annual fee?",account info
+"How do I request a new checkbook?",help
+"Tell me about the benefits of premium accounts",account info
+"I want to change my account password",help
+"Can I transfer money between my accounts?",transfer
+"How do I close my account?",help
+"Is there a penalty for early loan repayment?",account info
+"Can I get a student account?",account info
+"Tell me about the overdraft protection",account info
+"I need help with a wire transfer",help
+"Can I withdraw cash using my credit card?",account info
+"How can I dispute a charge?",help
+"Tell me about the privacy policy",account info
+"I want to apply for a business account",account info
+"Can I get a credit card with cashback rewards?",account info
+"How do I update my online banking profile?",help
+"Tell me about the educational loan options",account info
+"I need help with a lost debit card",help
+"Can I make online purchases using the credit card?",account info
+"How do I change my account PIN?",help
+"Tell me about the benefits of a fixed deposit",account info
+"I want to enroll in e-statements",account info
+"Can I get a car loan?",account info
+"How do I download the mobile banking app?",help
+"Tell me about the currency conversion fees",account info
+"I need help with a declined transaction",help
+"Can I open an account jointly with someone?",account info
+"How do I check my credit card balance?",balance
+"Tell me about the business loan options",account info
+"I want to update my email address",help
+"Can I transfer money to a foreign bank?",transfer
+"How do I report a fraudulent activity?",help
+"Tell me about the personal loan options",account info
+"I need help with setting up a savings goal",help
+"Can I get a credit card for travel rewards?",account info
+"How can I apply for a home equity loan?",account info
+"Tell me about the rewards redemption process",account info
+"I want to change my account nickname",help
+"Can I deposit cash at an ATM?",account info
+"How do I change my credit card PIN?",help
+"Tell me about the mobile check deposit",account info
+"I need help with an unauthorized transaction",help
+"Can I get a credit card with a low APR?",account info
+"How can I view my account statements online?",account info
+"Tell me about the benefits of a credit card",account info
+"I want to update my phone number",help
+"Can I apply for a credit card with bad credit?",account info
+"How do I reset my online banking password?",help
+"Tell me about the online bill payment",account info
+"I need help with a transaction dispute",help

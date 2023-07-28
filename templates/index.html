@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <style>
@@ -119,6 +119,148 @@
         </form>
     </div>
 </body>
+</html> -->
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Reset default browser styles */
+        body, h1, input, button {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Chat container */
+        .chat-container {
+            width: 800px; /* Adjust the width as desired */
+            height: 800px; /* Adjust the height as desired */
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+        }
+
+        /* Chat header */
+        .chat-header {
+            background-color: #3498db; /* Vibrant header background color */
+            padding: 10px;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .chat-header h2 {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        /* Chat messages */
+        .chat-messages {
+            height: 300px; /* Adjust the height as desired */
+            padding: 10px;
+            overflow-y: auto;
+        }
+
+        .message-container {
+            display: flex;
+            justify-content: flex-start; /* Align messages to the left */
+            margin-bottom: 8px;
+        }
+
+        .user-message {
+            background-color: #2ecc71; /* Vibrant color for user messages */
+            color: #fff;
+            padding: 8px;
+            border-radius: 16px;
+            margin-left: auto; /* Align user messages to the right */
+        }
+
+        .bot-message {
+            background-color: #f1c40f; /* Vibrant color for bot messages */
+            padding: 8px;
+            border-radius: 16px;
+            color: #333;
+        }
+
+        /* Chat input */
+        .chat-input {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        input[type="text"] {
+            flex-grow: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        button {
+            margin-left: 10px;
+            padding: 8px 16px;
+            background-color: #e74c3c; /* Vibrant send button color */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #c0392b; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Banking Bot</h2>
+        </div>
+        <div class="chat-messages">
+            <div id="chat-history">
+                {% for message in chat_history %}
+                    {% if loop.index % 2 == 0 %}
+                        <div class="message-container">
+                            <div class="user-message">{{ message }}</div>
+                        </div>
+                    {% else %}
+                        <div class="message-container">
+                            <div class="bot-message">{{ message }}</div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                {% if not chat_history %}
+                    <div class="message-container">
+                        <div class="bot-message">Hello! How can I assist you today?</div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <form action="/submit" method="post">
+            <div class="chat-input">
+                <input type="text" name="user_input" placeholder="Type your message..." required>
+                <button type="submit">Send</button>
+            </div>
+            <input type="hidden" name="chat_history" value="{{ chat_history }}">
+        </form>
+    </div>
+</body>
 </html>
 
 
@@ -126,6 +268,142 @@
 
 
 
+ -->
 
 
 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Reset default browser styles */
+        body, h1, input, button {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Chat container */
+        .chat-container {
+            width: 800px; /* Adjust the width as desired */
+            height: 600px; /* Adjust the height as desired */
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(to bottom, #ffffff, #f1f1f1); /* Add gradient color */
+        }
+
+        /* Chat header */
+        .chat-header {
+            background-color: #3d54ff; /* Vibrant header background color */
+            padding: 10px;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .chat-header h2 {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        /* Chat messages */
+        .chat-messages {
+            height: 450px; /* Adjust the height as desired */
+            padding: 10px;
+            overflow-y: auto;
+        }
+
+        .message-container {
+            display: flex;
+            justify-content: flex-start; /* Align messages to the left */
+            margin-bottom: 8px;
+        }
+
+        .user-message {
+            background-color: #2ecc71; /* Vibrant color for user messages */
+            color: #fff;
+            padding: 8px;
+            border-radius: 16px;
+            margin-left: auto; /* Align user messages to the right */
+        }
+
+        .bot-message {
+            background-color: #f1c40f; /* Vibrant color for bot messages */
+            padding: 8px;
+            border-radius: 16px;
+            color: #333;
+        }
+
+        /* Chat input */
+        .chat-input {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        input[type="text"] {
+            flex-grow: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        button {
+            margin-left: 10px;
+            padding: 8px 16px;
+            background-color: #e74c3c; /* Vibrant send button color */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #c0392b; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Banking Bot</h2>
+        </div>
+        <div class="chat-messages">
+            <div id="chat-history">
+                {% for message in chat_history %}
+                    {% if loop.index % 2 == 0 %}
+                        <div class="message-container">
+                            <div class="user-message">{{ message }}</div>
+                        </div>
+                    {% else %}
+                        <div class="message-container">
+                            <div class="bot-message">{{ message }}</div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                {% if not chat_history %}
+                    <div class="message-container">
+                        <div class="bot-message">Hello! How can I assist you today?</div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <form action="/submit" method="post">
+            <div class="chat-input">
+                <input type="text" name="user_input" placeholder="Type your message..." required>
+                <button type="submit">Send</button>
+            </div>
+            <input type="hidden" name="chat_history" value="{{ chat_history }}">
+        </form>
+    </div>
+</body>
+</html>
